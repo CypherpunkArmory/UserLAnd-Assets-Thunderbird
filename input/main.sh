@@ -19,8 +19,7 @@ apt-get update
 
 #install some packages with need for UserLAnd
 apt-get install -y --no-install-recommends sudo dropbear libgl1-mesa-glx tightvncserver xterm xfonts-base twm openbox expect
-apt-get install -y firefox-esr
-apt-get install -y pulseaudio
+DEBIAN_FRONTEND=noninteractive apt-get -y --no-install-recommends install octave less octave-control octave-financial octave-io octave-missing-functions octave-optim octave-signal octave-specfun octave-statistics octave-symbolic octave-image gnuplot-x11 pstoedit fonts-freefont-otf
 
 #clean up after ourselves
 apt-get clean
